@@ -59,7 +59,7 @@
         }
         
         .navbar .navbar-inner {
-        background: display:none;
+        background-image: ;
         }
     </style>
   </head>
@@ -74,7 +74,19 @@
         <div class="navbar">
             <div class="navbar-inner">
                 <div class="container">
-                    <ul class="nav">
+                 <ul class="nav">
+              <% yield_content :navigation %>
+            </ul>
+            <ul class="nav pull-right">
+              <% yield_content :sub_navigation %>
+              <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><%= h @user.login %><b class='caret'></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="/logout">Logout</a></li>
+              </ul>
+              </li>
+            </ul>
+                  <!--  <ul class="nav">
                         <li class="active"><a href="#">Home</a></li>
                         <li><a href="https://github.com/ProjectMeniscus/meniscus">Source Code</a></li>
                         <li><a href="https://github.com/ProjectMeniscus/meniscus/wiki">Wiki</a></li>
@@ -83,7 +95,7 @@
                         <li><a href='http://jenkins.projectmeniscus.org/job/Meniscus/'>
                             <img src='http://jenkins.projectmeniscus.org/job/Meniscus/badge/icon'></a>
                         </li>
-                    </ul>
+                    </ul> -->
                 </div>
             </div>
         </div><!-- /.navbar -->
