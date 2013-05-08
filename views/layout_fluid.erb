@@ -40,13 +40,52 @@
 
     <% end %>
 
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    
     <link rel="stylesheet" href="/css/main.min.css" type="text/css" media="screen" charset="utf-8">
      <link rel="stylesheet" href="http://projectmeniscus.org/css/bootstrap.min.css">
+      <style type="text/css">
+        body {
+            padding-top: 20px;
+            padding-bottom: 60px;
+        }
+
+            /* Custom container */
+        .container {
+            margin: 0 auto;
+            max-width: 1000px;
+        }
+        .container > hr {
+            margin: 60px 0;
+        }
+    </style>
   </head>
   <body>
     <div id="wrapper">
-       <div class="navbar navbar-static-top">
+    
+     <div class="masthead">
+        <h1>
+            <img src="http://projectmeniscus.org/img/Meniscus-Logo-Small.png" />&nbsp;&nbsp;&nbsp;<a href="http://projectmeniscus.org" style="text-decoration: none;">Project Meniscus</a>
+        </h1>
+        
+        <div class="navbar">
+            <div class="navbar-inner">
+                <div class="container">
+                    <ul class="nav">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="https://github.com/ProjectMeniscus/meniscus">Source Code</a></li>
+                        <li><a href="https://github.com/ProjectMeniscus/meniscus/wiki">Wiki</a></li>
+                        <li><a href="http://devops.rackspace.com/introducing-project-meniscus-the-python-event-cloud-logging-service.html">Articles</a></li>
+                        <li><a href='https://groups.google.com/forum/#!forum/meniscus'>Group</a></li>
+                        <li><a href='http://jenkins.projectmeniscus.org/job/Meniscus/'>
+                            <img src='http://jenkins.projectmeniscus.org/job/Meniscus/badge/icon'></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div><!-- /.navbar -->
+    </div>
+    
+      <!-- <div class="navbar navbar-static-top">
          <div class="navbar-inner">
         <div class="container-fluid">
           <a class="brand" href="/">huboard</a>
@@ -62,7 +101,7 @@
               </ul>
               </li>
             </ul>
-        </div>
+        </div> -->
       </div>
     </div>
     <div class="container-fluid" id="main-stage">
