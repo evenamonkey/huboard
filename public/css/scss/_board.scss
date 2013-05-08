@@ -50,7 +50,7 @@
     left:-640px;
 
    .board, .filters {
-     background: #fff;
+/*     background: #fff;*/
      border-right: 1px solid #ccc;
    }
    .column {
@@ -95,7 +95,7 @@
   margin-bottom: 10px;
   padding: 10px;
   border: 1px solid #e5e5e5;
-  background: #f3f3f3;
+/*  background: #f3f3f3;*/
 
   font-size: 100%;
 }
@@ -135,7 +135,7 @@
   margin: 10px 0;
   cursor:move;
   position:relative;
-  background-color: #fff;
+/*  background-color: #fff;*/
   border: 1px solid #e5e5e5;
   border-bottom-color: darken(#e5e5e5, 5%); 
   &.assignee-accept {
