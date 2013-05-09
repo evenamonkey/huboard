@@ -90,7 +90,7 @@ define(["../collections/issues",
            $("#drawer","#main-stage")
               //.append(noneBoard)
               .append(sidebar.render().el)
-              .find(".toggle-drawer").show();
+              .find(".toggle-drawer").hide();
 
            //$(".sidebar-wrapper").append(userFilter.render().el).show();
            $(".sidebar-wrapper")
@@ -110,8 +110,7 @@ define(["../collections/issues",
           ev.preventDefault();
 
           var open = $(".toggle-drawer")
-            .hasClass("arrow-left");
-
+          
           open ? animateDrawer("close") : animateDrawer("open");
         },
         onReceive: function(ev, ui){
