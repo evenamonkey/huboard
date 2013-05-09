@@ -154,7 +154,7 @@ ul.milestones li div span {
   box-sizing: border-box;
   width: 40px;
   line-height: 20px;
-  background: #fff;
+  background: #0000CC;
   background: rgba(255, 255, 255, 0.8);
   text-align: center; }
   .toggle-drawer.arrow-right {
@@ -178,7 +178,6 @@ ul.milestones li div span {
   top: 0;
   left: -640px; }
   #drawer .board, #drawer .filters {
-    background: #fff;
     border-right: 1px solid #ccc; }
   #drawer .column {
     float: none;
