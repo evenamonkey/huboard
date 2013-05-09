@@ -9,7 +9,7 @@ task :css do
   Dir.glob("**/s{a,c}ss") do |d|
     Dir.glob("#{d}/**/*.s[ac]ss").reject {|x| File.basename(x).start_with?"_"}.each do |sass|
       cssfile = "#{d}/../#{File.basename(sass,".*")}.min.css"
-      Sass.compile_file sass, cssfile, {style: :compressed }
+      Sass.compile_file sass, cssfile, {style: :nested }
     end
   end
 end
