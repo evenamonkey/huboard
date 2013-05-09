@@ -154,7 +154,7 @@ ul.milestones li div span {
   box-sizing: border-box;
   width: 40px;
   line-height: 20px;
-  background: #000;
+  background: #fff;
   background: rgba(255, 255, 255, 0.8);
   text-align: center; }
   .toggle-drawer.arrow-right {
@@ -178,7 +178,7 @@ ul.milestones li div span {
   top: 0;
   left: -640px; }
   #drawer .board, #drawer .filters {
-    background: #000011;
+    background: #fff;
     border-right: 1px solid #ccc; }
   #drawer .column {
     float: none;
@@ -214,7 +214,7 @@ ul.milestones li div span {
   margin-bottom: 10px;
   padding: 10px;
   border: 1px solid #e5e5e5;
-  /*  background: #f3f3f3;*/
+  background: #f3f3f3;
   font-size: 100%; }
 
 .column ul {
@@ -249,7 +249,7 @@ ul.milestones li div span {
   margin: 10px 0;
   cursor: move;
   position: relative;
-  /*  background-color: #fff;*/
+  background-color: #fff;
   border: 1px solid #e5e5e5;
   border-bottom-color: #d8d8d8; }
   .column li.assignee-accept {
@@ -577,7 +577,13 @@ body, html {
   -webkit-box-shadow: none;
   box-shadow: none; }
 .navbar .navbar-inner {
-  /* @include linear-gradient(#F9F9F9, #F3F3F3);*/
+  background-color: #f9f9f9;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f9f9f9), color-stop(100%, #f3f3f3));
+  background-image: -webkit-linear-gradient(top, #f9f9f9, #f3f3f3);
+  background-image: -moz-linear-gradient(top, #f9f9f9, #f3f3f3);
+  background-image: -ms-linear-gradient(top, #f9f9f9, #f3f3f3);
+  background-image: -o-linear-gradient(top, #f9f9f9, #f3f3f3);
+  background-image: linear-gradient(top, #f9f9f9, #f3f3f3);
   border-bottom: 1px solid #e5e5e5; }
   .navbar .navbar-inner .nav a {
     -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(0, 0, 0, 0.75))); }
