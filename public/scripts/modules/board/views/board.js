@@ -32,6 +32,7 @@ define(["../collections/issues",
         break;
       case "close":
         $("#drawer").hide();
+        alert('moo');
          
        
     }
@@ -107,7 +108,6 @@ define(["../collections/issues",
           ev.preventDefault();
 
           var open = $(".toggle-drawer")
-            .hasClass("arrow-left");
 
           open ? animateDrawer("close") : animateDrawer("open");
         }
