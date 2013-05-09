@@ -102,6 +102,14 @@ define(["../collections/issues",
         resizeColumns : function () {
            var tallest = calculateTallest();
            $("ul","#main-stage").css("min-height",tallest);
+        },
+        toggleDrawer : function (ev) {
+
+          ev.preventDefault();
+
+          var open = $(".toggle-drawer")
+
+          open ? animateDrawer("close") : animateDrawer("open");
         }
    });
 });
