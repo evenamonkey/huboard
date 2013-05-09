@@ -28,10 +28,20 @@ define(["../collections/issues",
 
     switch(direction) {
       case "open":
-        $("#drawer").show();
+        $("#drawer")
+          .find(".toggle-drawer").removeClass("arrow-right").addClass("arrow-left")
+          .end()
+          .animate({left: '+=270px'}, 300);
+        $("#content").animate({"margin-left": "+=100px"},300);
         break;
       case "close":
-        $("#drawer").hide();
+        $("#drawer")
+          .animate({left: '-=270px'}, 300, function(){
+             $(this)
+              .find(".toggle-drawer").removeClass("arrow-left").addClass("arrow-right")
+              .end();
+          });
+        $("#content").animate({"margin-left": "-=100px"},300);
     }
   };
 
@@ -90,7 +100,7 @@ define(["../collections/issues",
            $("#drawer","#main-stage")
               //.append(noneBoard)
               .append(sidebar.render().el)
-              .find(".toggle-drawer").hide();
+              .find(".toggle-drawer").show();
 
            //$(".sidebar-wrapper").append(userFilter.render().el).show();
            $(".sidebar-wrapper")
@@ -109,6 +119,10 @@ define(["../collections/issues",
 
           ev.preventDefault();
 
+          var open = $(".toggle-drawer")
+            .hasClass("arrow-left");
+
+          open ? animateDrawer("close") : animateDrawer("open");
         },
         onReceive: function(ev, ui){
         },
