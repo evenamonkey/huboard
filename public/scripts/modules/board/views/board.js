@@ -91,7 +91,7 @@ define(["../collections/issues",
            $("#stage").append(board);
 
            $("#drawer","#main-stage")
-              .append(noneBoard).find(".toggle-drawer").show();
+              .append(noneBoard).find(".toggle-drawer").hide();
 
            //$(".sidebar-wrapper").append(userFilter.render().el).show();
            $(".sidebar-wrapper").append(sidebar.render().el).show();
@@ -102,12 +102,6 @@ define(["../collections/issues",
         resizeColumns : function () {
            var tallest = calculateTallest();
            $("ul","#main-stage").css("min-height",tallest);
-        },
-        toggleDrawer : function (ev) {
-
-          ev.preventDefault();
-
-     
         }
    });
 });
