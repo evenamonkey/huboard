@@ -79,7 +79,9 @@
 					<div class="navbar-inner">
 						<div class="container">
 							<ul class="nav">
-								<li><a href="http://scrum.projectmeniscus.org:8081"><i class="icon-signal icon-white"></i> Burn Down</a></li>
+								<li>
+									<a href="http://scrum.projectmeniscus.org:8081"><i class="icon-signal icon-white"></i> Burn Down</a>
+								</li>
 								<% yield_content :navigation %>
 							</ul>
 							<ul class="nav pull-right">
@@ -102,7 +104,9 @@
 				<div class="page-header-wrapper">
 					<% yield_content :header %>
 				</div>
-				
+				<div class="sidebar">
+					<% yield_content :sidebar %>
+				</div>
 				<div class="content" id="content">
 					<%= yield %>
 				</div>
