@@ -107,9 +107,7 @@ define(["../collections/issues",
 
           ev.preventDefault();
 
-          var open = $(".toggle-drawer")
-
-          open ? animateDrawer("close") : animateDrawer("open");
+     
         }
    });
 });
