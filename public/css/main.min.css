@@ -248,7 +248,6 @@ ul.milestones li div span {
   margin: 10px 0;
   cursor: move;
   position: relative;
-  background-color: #fff;
   border: 1px solid #e5e5e5;
   border-bottom-color: #d8d8d8; }
   .column li.assignee-accept {
@@ -316,13 +315,9 @@ ul.milestones li div span {
   padding-right: 2px; }
 
 .column .ui-sortable-placeholder {
-  background: #cccccc;
   list-style: none;
   padding: 80px 5px 10px 5px;
   margin: 10px 0; }
-
-.column .ui-sortable-hover {
-  background: #efefef; }
 
 .filters {
   list-style: none;
@@ -602,13 +597,11 @@ body, html {
   position: relative; }
   .container-fluid > .sidebar {
     width: 230px;
-    position: absolute;
     border-right: 1px solid #ccc;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box; }
   .container-fluid > .content {
-    margin-left: 250px;
     position: relative; }
 
 .drop-shadow {
