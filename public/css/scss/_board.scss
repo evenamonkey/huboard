@@ -135,7 +135,7 @@
   margin: 10px 0;
   cursor:move;
   position:relative;
-  background-color: #fff;
+ // background-color: #fff;
   border: 1px solid #e5e5e5;
   border-bottom-color: darken(#e5e5e5, 5%); 
   &.assignee-accept {
@@ -223,16 +223,14 @@
   padding-right:2px;
 }
 .column .ui-sortable-placeholder {
-  background:$borderColor;
+//  background:$borderColor;
   list-style: none;
   padding: 80px 5px 10px 5px;
   margin: 10px 0;
 }
 .column .ui-sortable-hover {
-  background:#efefef;
+ // background:#efefef;
 }
-
-
 
 .filters {
   list-style: none;
