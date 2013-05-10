@@ -176,7 +176,8 @@ ul.milestones li div span {
   position: absolute;
   width: 352px;
   top: 0;
-  left: -640px; }
+  left: -640px;
+  background-color: #000000; }
   #drawer .board, #drawer .filters {
     border-right: 1px solid #ccc; }
   #drawer .column {
