@@ -114,14 +114,14 @@
 }
 .backlog {
     .dim {
-      opacity: 0.6;
+      opacity: 0.4;
     }
     .active {
     }
 }
 .board {
     .dim {
-      opacity: 0.6;
+      opacity: 0.4;
       @include transition (opacity 0.6s, ease-out);
       @include transition (filter 0.6s, ease-out);
       @include prefixer(filter, grayscale(100%) opacity(80%));

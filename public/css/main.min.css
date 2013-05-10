@@ -225,10 +225,10 @@ ul.milestones li div span {
   padding: 0; }
 
 .backlog .dim {
-  opacity: 0.6; }
+  opacity: 0.4; }
 
 .board .dim {
-  opacity: 0.6;
+  opacity: 0.4;
   -webkit-transition: opacity 0.6s, ease-out;
   -moz-transition: opacity 0.6s, ease-out;
   -ms-transition: opacity 0.6s, ease-out;
@@ -280,7 +280,7 @@ ul.milestones li div span {
   .column li .card-header {
     border-bottom: 1px solid #cccccc;
     padding: 5px 0;
-    color: #444444; }
+    color: #cccccc; }
   .column li .title {
     padding-right: 30px;
     overflow: hidden;
@@ -339,7 +339,7 @@ ul.milestones li div span {
 
 .filters li.clear-filters {
   border-radius: 0;
-  border-bottom: 1px solid #444444; }
+  border-bottom: 1px solid #cccccc; }
 
 .filters li.clear-filters a:hover {
   color: #666666; }
