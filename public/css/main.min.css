@@ -597,11 +597,13 @@ body, html {
   position: relative; }
   .container-fluid > .sidebar {
     width: 230px;
+    position: absolute;
     border-right: 1px solid #ccc;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box; }
   .container-fluid > .content {
+    margin-left: 250px;
     position: relative; }
 
 .drop-shadow {
