@@ -571,23 +571,6 @@ body, html {
   margin-top: 0;
   color: #999; }
 
-.navbar.navbar-fixed-top .navbar-inner, .navbar.navbar-static-top .navbar-inner {
-  -webkit-box-shadow: none;
-  box-shadow: none; }
-.navbar .navbar-inner {
-  border-bottom: 1px solid #e5e5e5; }
-  .navbar .navbar-inner .nav a {
-    -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(0, 0, 0, 0.75))); }
-.navbar .nav > li > a:hover {
-  border-top: 3px solid #DD4B39;
-  padding-top: 7px; }
-.navbar .nav > li.active > a, .navbar .nav > li.active > a:hover, .navbar .nav > li.active > .dropdown-toggle, .navbar .nav > li.active > .dropdown-toggle:hover, .navbar .nav > li.dropdown.open > a, .navbar .nav > li.dropdown.open > a:hover, .navbar .nav > li.dropdown.open > .dropdown-toggle, .navbar .nav > li.dropdown.open > .dropdown-toggle:hover {
-  border-top: 3px solid #2590D6;
-  padding-top: 7px;
-  background: none;
-  -webkit-box-shadow: none;
-  box-shadow: none; }
-
 .hide {
   display: none; }
 
