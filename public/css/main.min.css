@@ -177,7 +177,10 @@ ul.milestones li div span {
   width: 352px;
   top: 0;
   left: -640px;
-  background-color: #000000; }
+  background-color: #121417;
+  background-image: linear, to bottom, #060606, #252a30;
+  background-repeat: repeat-x;
+  min-height: 100%; }
   #drawer .board, #drawer .filters {
     border-right: 1px solid #ccc; }
   #drawer .column {
