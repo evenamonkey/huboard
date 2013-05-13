@@ -60,9 +60,8 @@
 				margin: 60px 0;
 			}
 			.column h3 {
-				
-				color:#666666;
-				none repeat scroll 0 0 #E5E5E5;
+
+				color: #666666;none repeat scroll 0 0 #E5E5E5;
 			}
 		</style>
 
@@ -171,6 +170,13 @@
 		<% yield_content :overlay %>
 	</body>
 	<script type="text/javascript">
+		highlightTasks = function(story) {
+
+			var n = story.split("|");
+			$('div:contains("' + n[1] + '")').css("background", "#CCCCCC");
+
+		};
+
 		var _gaq = _gaq || [];
 		_gaq.push(['_setAccount', 'UA-28313898-1']);
 		_gaq.push(['_setDomainName', 'huboard.com']);
