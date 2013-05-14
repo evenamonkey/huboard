@@ -175,7 +175,7 @@
 			var n = story.split("|");
 			alert(n[1]);
 			
-			$('div.title').not('contains("' + n[1] + '")').toggleClass( "active" );
+			$('div.title').not(':contains("' + n[1] + '")').toggleClass( "active" );
 			//return false;
 		};
 	</script>
