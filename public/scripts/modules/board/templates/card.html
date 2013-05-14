@@ -1,6 +1,6 @@
 <a href="#"  title="Close issue" class="close iconic x"><span></span></a>
 <div class="card-header">
-  <div class="title" title="<%= title %>">
+  <div class="title .linker" title="<%= title %>">
     <%= title %> 
   </div>
   <a class="number" href="<%= html_url %>" target="_blank" title="View issue on github.com"><small>#</small><%= number %></a>
@@ -14,7 +14,7 @@
    Milestone: <%= milestone.title %>
 </div>
 <% } %>
- <span class="linker">..</span> 
+ <!-- <a href="javascript:void(0);" onclick="highlightTasks('<%= title %>');" >..<img src="/css/link.png" /></a>  -->
 <% if(pull_request.html_url) { %>
   <span class="label label-info">Pull request</span>
 <% } %>
