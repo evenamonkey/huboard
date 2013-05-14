@@ -173,14 +173,14 @@
 	
 		 $(".linker", this).toggle(function (e) {
 
-                $(this).parent().children("p").stop(true, true).fadeIn(500);
-                $(this).addClass("clicked");
-                $(this).children().addClass("clicked_span");
+               e.preventdefault();
+                $(this).addClass("dim");
+                $(this).children().addClass("dim");
 
             }, function(){
-                $(this).parent().children("p").stop(true, true).fadeOut(500);
-                $(this).removeClass("clicked");
-                $(this).children().removeClass("clicked_span");
+               e.preventdefault();
+                $(this).removeClass("dim");
+                $(this).children().removeClass("dim");
 
 
             });
