@@ -172,12 +172,13 @@
 	<script type="text/javascript">
 	
 		 $("a.linker", this).toggle(function (e) {
-
+alert('one');
                e.preventdefault();
                 $(this).addClass("dim");
                 $(this).children().addClass("dim");
 
             }, function(){
+            	alert('two');
                e.preventdefault();
                 $(this).removeClass("dim");
                 $(this).children().removeClass("dim");
