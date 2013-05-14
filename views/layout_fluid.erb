@@ -170,13 +170,22 @@
 		<% yield_content :overlay %>
 	</body>
 	<script type="text/javascript">
-		highlightTasks = function(ev,story) {
-ev.preventDefault();
-			var n = story.split("|");
-			alert(n[1]);
-			
-			$('div.title').not(':contains("' + n[1] + '")').toggleClass( "dim" );
-			//return false;
+		highlightTasks = new function(event,story) {
+		ev.preventDefault();
+		var n = story.split("|");
+		alert(n[1]);
+
+		//$('div.title').not(':contains("' + n[1] + '")').toggleClass( "dim" );
+
+		$('div.title:contains("' + n[1] + '")').toggle(
+		function () {
+		$(this).addClass("dim");
+		},
+		function () {
+		$(this).removeClass("dim");
+		}
+		);
+		//return false;
 		};
 	</script>
 	<script type="text/javascript">
