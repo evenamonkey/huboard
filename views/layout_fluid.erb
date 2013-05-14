@@ -173,10 +173,12 @@
 		highlightTasks = function(story) {
 
 			var n = story.split("|");
-			$('div:contains("' + n[1] + '")').addClass("dim");
-
+			alert(n[1]);
+			
+			$('div.title:contains("' + n[1] + '")').addClass("dim");
 		};
-
+	</script>
+	<script type="text/javascript">
 		var _gaq = _gaq || [];
 		_gaq.push(['_setAccount', 'UA-28313898-1']);
 		_gaq.push(['_setDomainName', 'huboard.com']);
