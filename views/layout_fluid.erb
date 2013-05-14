@@ -170,8 +170,8 @@
 		<% yield_content :overlay %>
 	</body>
 	<script type="text/javascript">
-		highlightTasks = new function(story) {
-		//event.preventDefault();
+		highlightTasks = new function(ev,story) {
+		ev.preventDefault();
 		var n = story.split("|");
 		alert(n[1]);
 
