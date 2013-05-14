@@ -170,17 +170,14 @@
 		<% yield_content :overlay %>
 	</body>
 	<script type="text/javascript">
-	
-	
-	
-		$("a.linker", this).click(function(e) {
+		$("a.linker").click(function(e) {
 			alert('one');
 			// console.log($(this));
 			// e.preventdefault();
 			// $(this).addClass("dim");
 			// $(this).children().addClass("dim");
 
-		// }, function() {
+			// }, function() {
 			// alert('two');
 			// e.preventdefault();
 			// $(this).removeClass("dim");
@@ -189,15 +186,27 @@
 		});
 
 		highlightTasks = function(story) {
-		//ev.preventDefault();
-		var n = story.split("|");
-		alert(n[1]);
-		
-		
-		//$('div.title').not(':contains("' + n[1] + '")').toggleClass( "dim" );
-	//	$('div:contains("' + n[1] + '")').css("background", "#CCCCCC");
-		$('div.title:contains("' + n[1] + '")').toggleClass("dim");
-		
+			//ev.preventDefault();
+			var n = story.split("|");
+			//	alert(n[1]);
+
+			//$('div.title').not(':contains("' + n[1] + '")').toggleClass( "dim" );
+			//	$('div:contains("' + n[1] + '")').css("background", "#CCCCCC");
+			$('div.title:contains("' + n[1] + '")', this).toggle(function(e) {
+				alert('one');
+				console.log($(this));
+				e.preventdefault();
+				$(this).addClass("dim");
+				$(this).children().addClass("dim");
+
+			}, function() {
+				alert('two');
+				e.preventdefault();
+				$(this).removeClass("dim");
+				$(this).children().removeClass("dim");
+
+			});
+
 		};
 	</script>
 	<script type="text/javascript">
