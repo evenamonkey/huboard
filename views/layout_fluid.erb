@@ -170,12 +170,12 @@
 		<% yield_content :overlay %>
 	</body>
 	<script type="text/javascript">
-		highlightTasks = function(story) {
-
+		highlightTasks = function(ev,story) {
+ev.preventDefault();
 			var n = story.split("|");
 			alert(n[1]);
 			
-			$('div.title').not(':contains("' + n[1] + '")').toggleClass( "active" );
+			$('div.title').not(':contains("' + n[1] + '")').toggleClass( "dim" );
 			//return false;
 		};
 	</script>
