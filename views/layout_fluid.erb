@@ -178,21 +178,7 @@
 
 			//$('div.title').not(':contains("' + n[1] + '")').toggleClass( "dim" );
 			//	$('div:contains("' + n[1] + '")').css("background", "#CCCCCC");
-			$('div:contains("' + n[1] + '")').toggle(function(e) {
-				alert('oner');
-				console.log($(this));
-			//	e.preventdefault();
-			//	$(this).addClass("dim");
-			//	$(this).children().addClass("dim");
-
-			}, function() {
-				alert('twor');
-				console.log($(this));
-			//	e.preventdefault();
-			//	$(this).removeClass("dim");
-			//	$(this).children().removeClass("dim");
-
-			});
+			$('div.title:contains("' + n[1] + '")').toggleClass( "dim" );
 
 		};
 	</script>
