@@ -170,17 +170,33 @@
 		<% yield_content :overlay %>
 	</body>
 	<script type="text/javascript">
-		
 		highlightTasks = function(story) {
 			//ev.preventDefault();
 			var n = story.split("|");
-				alert(n[1]);
+			alert(n[1]);
 
 			//$('div.title').not(':contains("' + n[1] + '")').toggleClass( "dim" );
 			//	$('div:contains("' + n[1] + '")').css("background", "#CCCCCC");
-			 $('div:contains("' + n[1] + '")').toggleClass( "dim" );
-//return false;
+			$('div.title:contains("' + n[1] + '")').toggleClass("dim");
+			//return false;
 		};
+
+		$(".tog", this).toggle(function(e) {
+			alert("test");
+			console.log($(this));
+			// $(this).parent().children("p").stop(true, true).fadeIn(500);
+			// $(this).addClass("clicked");
+			// $(this).children().addClass("clicked_span");
+			return false;
+
+		}, function() {
+
+			// $(this).parent().children("p").stop(true, true).fadeOut(500);
+			// $(this).removeClass("clicked");
+			// $(this).children().removeClass("clicked_span");
+			return false;
+
+		});
 	</script>
 	<script type="text/javascript">
 		var _gaq = _gaq || [];

@@ -15,7 +15,7 @@
    Milestone: <%= milestone.title %>
 </div>
 <% } %>
- <a href="#" onclick="highlightTasks('<%= title %>');" >^<img src="/css/link.png" /></a> 
+ <!-- <a href="#" onclick="highlightTasks('<%= title %>');" >^<img src="/css/link.png" /></a>  -->
 <% if(pull_request.html_url) { %>
   <span class="label label-info">Pull request</span>
 <% } %>
@@ -30,5 +30,5 @@
 </div>
 
 <% }); %>
-
+ <button class="tog btn btn-mini btn-primary" type="button" title="<%= title %>">related</button>
 </div> 
