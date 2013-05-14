@@ -11,9 +11,10 @@
 
 <% if(milestone) { %>
 <div class="milestone">
-   Milestone: <%= milestone.title %> <a href="#" onclick="highlightTasks('<%= title %>')" ><img src="css/link.png" /></a> 
+   Milestone: <%= milestone.title %>
 </div>
 <% } %>
+ <a href="#" onclick="highlightTasks('<%= title %>')" ><img src="/css/link.png" /></a> 
 <% if(pull_request.html_url) { %>
   <span class="label label-info">Pull request</span>
 <% } %>
