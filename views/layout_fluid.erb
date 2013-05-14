@@ -177,15 +177,8 @@
 
 		//$('div.title').not(':contains("' + n[1] + '")').toggleClass( "dim" );
 
-		$('div:contains("' + n[1] + '")').toggle(
-		function () {
-		$(this).addClass("dim");
-		},
-		function () {
-		$(this).removeClass("dim");
-		}
-		);
-		//return false;
+		$('div:contains("' + n[1] + '")').toggleClass("dim");
+		
 		};
 	</script>
 	<script type="text/javascript">
