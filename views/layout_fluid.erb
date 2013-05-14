@@ -173,7 +173,7 @@
 	
 	
 	
-		$(".linker", this).click(function(e) {
+		$("a.linker", this).click(function(e) {
 			alert('one');
 			// console.log($(this));
 			// e.preventdefault();
@@ -193,9 +193,10 @@
 		var n = story.split("|");
 		alert(n[1]);
 		
+		
 		//$('div.title').not(':contains("' + n[1] + '")').toggleClass( "dim" );
 	//	$('div:contains("' + n[1] + '")').css("background", "#CCCCCC");
-		$('div:contains("' + n[1] + '")').toggleClass("dim");
+		$('div.title:contains("' + n[1] + '")').toggleClass("dim");
 		
 		};
 	</script>
