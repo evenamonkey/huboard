@@ -170,17 +170,18 @@
 		<% yield_content :overlay %>
 	</body>
 	<script type="text/javascript">
-		$(".linker", this).toggle(function(e) {
+		$("a.linker", this).click(function(e) {
 			alert('one');
+			console.log($(this));
 			e.preventdefault();
 			$(this).addClass("dim");
 			$(this).children().addClass("dim");
 
-		}, function() {
-			alert('two');
-			e.preventdefault();
-			$(this).removeClass("dim");
-			$(this).children().removeClass("dim");
+		// }, function() {
+			// alert('two');
+			// e.preventdefault();
+			// $(this).removeClass("dim");
+			// $(this).children().removeClass("dim");
 
 		});
 
