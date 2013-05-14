@@ -1,7 +1,7 @@
 <a href="#"  title="Close issue" class="close iconic x"><span></span></a>
 <div class="card-header">
   <div class="title" title="<%= title %>">
-    <%= title %> <a href="#" onclick="highlightTasks('<%= title %>')" ><img src="css/link.png" /></a> 
+    <%= title %> 
   </div>
   <a class="number" href="<%= html_url %>" target="_blank" title="View issue on github.com"><small>#</small><%= number %></a>
 </div>
@@ -11,7 +11,7 @@
 
 <% if(milestone) { %>
 <div class="milestone">
-   Milestone: <%= milestone.title %>
+   Milestone: <%= milestone.title %> <a href="#" onclick="highlightTasks('<%= title %>')" ><img src="css/link.png" /></a> 
 </div>
 <% } %>
 <% if(pull_request.html_url) { %>
