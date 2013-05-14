@@ -192,15 +192,16 @@
 
 			//$('div.title').not(':contains("' + n[1] + '")').toggleClass( "dim" );
 			//	$('div:contains("' + n[1] + '")').css("background", "#CCCCCC");
-			$('div:contains("' + n[1] + '")').toggle(function(e) {
+			$('div:contains("' + n[1] + '")',this).toggle(function(e) {
 				alert('one');
-				//console.log($(this));
+				console.log($(this));
 			//	e.preventdefault();
 			//	$(this).addClass("dim");
 			//	$(this).children().addClass("dim");
 
 			}, function() {
 				alert('two');
+				console.log($(this));
 			//	e.preventdefault();
 			//	$(this).removeClass("dim");
 			//	$(this).children().removeClass("dim");
