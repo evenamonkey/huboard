@@ -170,14 +170,14 @@
 		<% yield_content :overlay %>
 	</body>
 	<script type="text/javascript">
-		highlightTasks = new function(event,story) {
-		event.preventDefault();
+		highlightTasks = new function(story) {
+		//event.preventDefault();
 		var n = story.split("|");
 		alert(n[1]);
 
 		//$('div.title').not(':contains("' + n[1] + '")').toggleClass( "dim" );
 
-		$('div.title:contains("' + n[1] + '")').toggle(
+		$('div:contains("' + n[1] + '")').toggle(
 		function () {
 		$(this).addClass("dim");
 		},
