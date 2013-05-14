@@ -170,31 +170,29 @@
 		<% yield_content :overlay %>
 	</body>
 	<script type="text/javascript">
-	
-		 $("a.linker", this).toggle(function (e) {
-alert('one');
-               e.preventdefault();
-                $(this).addClass("dim");
-                $(this).children().addClass("dim");
+		$(".linker", this).toggle(function(e) {
+			alert('one');
+			e.preventdefault();
+			$(this).addClass("dim");
+			$(this).children().addClass("dim");
 
-            }, function(){
-            	alert('two');
-               e.preventdefault();
-                $(this).removeClass("dim");
-                $(this).children().removeClass("dim");
+		}, function() {
+			alert('two');
+			e.preventdefault();
+			$(this).removeClass("dim");
+			$(this).children().removeClass("dim");
 
+		});
 
-            });
-            
 		// highlightTasks = function(story) {
 		// //ev.preventDefault();
 		// var n = story.split("|");
 		// alert(n[1]);
-// 
+		//
 		// //$('div.title').not(':contains("' + n[1] + '")').toggleClass( "dim" );
-	// $('div:contains("' + n[1] + '")').css("background", "#CCCCCC");
+		// $('div:contains("' + n[1] + '")').css("background", "#CCCCCC");
 		// $('div:contains("' + n[1] + '")').toggleClass("dim");
-// 		
+		//
 		// };
 	</script>
 	<script type="text/javascript">
