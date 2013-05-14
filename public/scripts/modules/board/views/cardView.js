@@ -22,11 +22,15 @@ define(["text!../templates/card.html","../models/card", "../../common/events/pos
       "drop": "dropped",
       "reorder" : "drop",
       "click .number" : "onNumber",
+       "click .linker" : "onLinker",
       "click" : "fullscreen"
 
     },
     tagName:"li",
     onNumber: function (ev) {
+      ev.stopPropagation();
+    },
+     onLinker: function (ev) {
       ev.stopPropagation();
     },
     onMoved: function(data){
