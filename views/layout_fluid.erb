@@ -174,12 +174,12 @@
 		highlightTasks = function(story) {
 			//ev.preventDefault();
 			var n = story.split("|");
-				alert(n[1]);
-$(this).preventDefault();
+			//	alert(n[1]);
+
 			//$('div.title').not(':contains("' + n[1] + '")').toggleClass( "dim" );
 			//	$('div:contains("' + n[1] + '")').css("background", "#CCCCCC");
 			$('div.title:contains("' + n[1] + '")').toggleClass( "dim" );
-
+return false;
 		};
 	</script>
 	<script type="text/javascript">
