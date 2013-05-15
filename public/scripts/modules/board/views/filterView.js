@@ -8,6 +8,7 @@ define(["../../common/events/postal"], function(postal) {
        tagName: "li",
        className: "filter",
        initialize: function(params) {
+       	console.log(params);
             this.params = params;
             this.condition = params.condition;
             this.name = params.name;
