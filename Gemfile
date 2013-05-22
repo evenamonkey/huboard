@@ -9,6 +9,8 @@ gem 'sinatra-content-for', "~> 0.1.0"
 gem 'ghee'
 gem 'rack-cache'
 gem 'activesupport'
+gem 'faye'
+gem 'thin'
 
 group :development do
   gem 'watchr'
@@ -16,6 +18,7 @@ group :development do
   gem 'foreman'
   gem 'sass'
   gem 'bourbon'
+
 end
 
 group :production do
